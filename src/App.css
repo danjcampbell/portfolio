@@ -5,10 +5,61 @@
   min-height: 100vh;
 }
 
-.photo {
-  height: 40vmin;
+.paragraph {
+  color: white;
 }
 
-.paragraph {
-  color: blanchedalmond;
+h1 {
+  font-size: larger;
+  color: white;
+}
+
+.homeImg {
+  height: 50vmin;
+}
+
+.navBarItems {
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+.navigation-active {
+  display: grid;
+}
+
+.navigation-inactive {
+  display: none;
+}
+.navLink {
+  padding: 0.5em 1em;
+  width: 100%;
+  border-style: solid;
+  border-color: grey;
+  border-spacing: 1em;
+  border-width: 0.1em;
+}
+
+.navLink:hover {
+  background-color: cornflowerblue;
+}
+
+a:visited {
+  color: white;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navToggler {
+  padding: 0.5em 1em;
 }

@@ -1,39 +1,28 @@
 import dan from "./dan1.JPG";
 import "./App.css";
-import React, { useEffect } from "react";
+import { Resume } from "./Resume.js";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { NavBar } from "./NavBar.js";
 
 function App() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://platform.linkedin.com/badges/js/profile.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="App">
-      <header className=" -header">
-        <div
-          className="LI-profile-badge"
-          data-version="v1"
-          data-size="medium"
-          data-locale="en_US"
-          data-type="vertical"
-          data-theme="dark"
-          data-vanity="danieljcampbell1"
-        >
-          <a
-            className="LI-simple-link"
-            href="https://www.linkedin.com/in/danieljcampbell1?trk=profile-badge"
-          >
-            Daniel Campbell
-          </a>
-        </div>
-        <p className="paragraph">DanJCampbell.com is under Construction.</p>
-      </header>
+      <Router>
+        <NavBar />
+        <Route
+          exact={true}
+          path="/"
+          render={() => {
+            return (
+              <>
+                <img className="homeImg" alt="homeImage" src={dan}></img>
+                <h1>Daniel J. Campbell's Professional Portfolio</h1>
+              </>
+            );
+          }}
+        />
+        <Route path="/resume" render={() => <Resume />} />
+      </Router>
     </div>
   );
 }
