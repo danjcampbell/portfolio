@@ -1,7 +1,7 @@
 import dan from "./dan1.JPG";
 import "./App.css";
 import { Resume } from "./Resume.js";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { NavBar } from "./NavBar.js";
 
 function App() {
