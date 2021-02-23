@@ -1,30 +1,42 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faHome,
+  faHashtag,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = () => {
   const [clicked, setClicked] = useState(false);
 
-  const handleClick = (e) => {
-    setClicked(!clicked);
-  };
-
   return (
-    <div className="navBarItems">
-      <h1 className="navToggler" onClick={(e) => handleClick(e)}>
-        <FontAwesomeIcon icon={clicked ? faTimes : faBars} />
-      </h1>
-      <ul className={clicked ? "navigation-active" : "navigation-inactive"}>
-        <Link to={"/"}>
-          <li className="navLink">Home </li>
-        </Link>
-        <Link to={"/resume"}>
-          {" "}
-          <li className="navLink">Social Media </li>
-        </Link>
-      </ul>
+    <div className="navBar">
+      <Link to="#" className="menu-bars" onClick={() => setClicked(!clicked)}>
+        <FontAwesomeIcon icon={faBars} />
+      </Link>
+      <nav className={clicked ? "navigation active" : "navigation"}>
+        <ul className="nav-menu">
+          <Link to="#" onClick={() => setClicked(false)}>
+            <li className="navLink">
+              <FontAwesomeIcon style={{ float: "left" }} icon={faTimes} />
+            </li>
+          </Link>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <li className="navLink">
+              <FontAwesomeIcon style={{ float: "left" }} icon={faHome} /> Home
+            </li>
+          </Link>
+          <Link to={"/resume"} style={{ textDecoration: "none" }}>
+            <li className="navLink">
+              <FontAwesomeIcon style={{ float: "left" }} icon={faHashtag} />
+              <span>Social Media</span>
+            </li>
+          </Link>
+        </ul>
+      </nav>
     </div>
   );
 };

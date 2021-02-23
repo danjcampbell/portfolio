@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-color: black;
   height: 100%;
   min-height: 100vh;
+  background-color: #0b0c10;
 }
 
 .paragraph {
@@ -11,55 +11,67 @@
 
 h1 {
   font-size: larger;
-  color: white;
+  color: #66fcf1;
 }
 
 .homeImg {
   height: 50vmin;
 }
 
-.navBarItems {
+.navBar {
   height: 80px;
-  color: white;
+  color: #45a29e;
   display: flex;
   justify-content: left;
   align-items: center;
   font-size: 1em;
   padding-left: 5px;
+  padding-left: 5px;
 }
 
-.navigation-active {
-  display: grid;
+.navigation.active {
+  left: 0;
+  transition: 350ms;
+  background-image: #c5c6c7;
+  z-index: 100;
 }
 
-.navigation-inactive {
-  display: none;
-}
-.navLink {
-  padding: 0.5em 1em;
-  width: 100%;
-  border-style: solid;
-  border-color: grey;
-  border-spacing: 1em;
-  border-width: 0.1em;
+.navigation {
+  display: flex;
+  width: 250px;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
 }
 
 .navLink:hover {
-  background-color: cornflowerblue;
+  background-color: #45a29e;
 }
 
-a:visited {
-  color: white;
-}
-a {
+.navLink {
   font-weight: bold;
-  text-decoration: none;
-}
-
-ul {
+  border-style: outset;
+  border-color: #66fcf1;
   list-style-type: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  color: #c5c6c7;
+  background-color: #1f2833;
 }
-
-.navToggler {
-  padding: 0.5em 1em;
+.menu-bars {
+  top: 0;
+  color: #c5c6c7;
+  font-size: 2rem;
+  background: none;
+}
+.nav-menu {
+  width: inherit;
+  padding: inherit;
+  justify-content: center;
+  background-color: #1f2833;
 }
