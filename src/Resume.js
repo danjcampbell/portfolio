@@ -16,9 +16,9 @@ export const Resume = () => {
     <div
       class="LI-profile-badge"
       data-version="v1"
-      data-size="large"
+      data-size="medium"
       data-locale="en_US"
-      data-type="horizontal"
+      data-type="vertical"
       data-theme="dark"
       data-vanity="danieljcampbell1"
     >
