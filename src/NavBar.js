@@ -26,13 +26,14 @@ export const NavBar = () => {
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
             <li className="navLink">
-              <FontAwesomeIcon style={{ float: "left" }} icon={faHome} /> Home
+              <FontAwesomeIcon style={{ float: "left" }} icon={faHome} />
+              <div style={{ width: "75%" }}>Home</div>
             </li>
           </Link>
           <Link to={"/resume"} style={{ textDecoration: "none" }}>
             <li className="navLink">
               <FontAwesomeIcon style={{ float: "left" }} icon={faHashtag} />
-              <span>Social Media</span>
+              <div style={{ width: "75%" }}>Social Media</div>
             </li>
           </Link>
         </ul>
