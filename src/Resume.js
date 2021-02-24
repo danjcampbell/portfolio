@@ -13,21 +13,23 @@ export const Resume = () => {
   }, []);
 
   return (
-    <div
-      class="LI-profile-badge"
-      data-version="v1"
-      data-size="medium"
-      data-locale="en_US"
-      data-type="vertical"
-      data-theme="dark"
-      data-vanity="danieljcampbell1"
-    >
-      <a
-        class="LI-simple-link"
-        href="https://www.linkedin.com/in/danieljcampbell1?trk=profile-badge"
+    <div className="social">
+      <div
+        class="LI-profile-badge"
+        data-version="v1"
+        data-size="large"
+        data-locale="en_US"
+        data-type="vertical"
+        data-theme="dark"
+        data-vanity="danieljcampbell1"
       >
-        Daniel Campbell
-      </a>
+        <a
+          class="LI-simple-link"
+          href="https://www.linkedin.com/in/danieljcampbell1?trk=profile-badge"
+        >
+          Daniel Campbell
+        </a>
+      </div>
     </div>
   );
 };
