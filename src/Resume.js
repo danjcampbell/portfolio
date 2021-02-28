@@ -15,7 +15,7 @@ export const Resume = () => {
   return (
     <div className="social">
       <div
-        class="LI-profile-badge"
+        className="LI-profile-badge"
         data-version="v1"
         data-size="large"
         data-locale="en_US"

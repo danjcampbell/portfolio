@@ -6,6 +6,7 @@ import {
   faHome,
   faHashtag,
   faTimes,
+  faVrCardboard,
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
 
@@ -21,19 +22,25 @@ export const NavBar = () => {
         <ul className="nav-menu">
           <Link to="#" onClick={() => setClicked(false)}>
             <li className="navLink">
-              <FontAwesomeIcon style={{ float: "left" }} icon={faTimes} />
+              <FontAwesomeIcon className="icon" icon={faTimes} />
             </li>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
             <li className="navLink">
-              <FontAwesomeIcon style={{ float: "left" }} icon={faHome} />
-              <div style={{ width: "75%" }}>Home</div>
+              <FontAwesomeIcon className="icon" icon={faHome} />
+              <div className="linklabel">Home</div>
             </li>
           </Link>
           <Link to={"/resume"} style={{ textDecoration: "none" }}>
             <li className="navLink">
-              <FontAwesomeIcon style={{ float: "left" }} icon={faHashtag} />
-              <div style={{ width: "75%" }}>Social Media</div>
+              <FontAwesomeIcon className="icon" icon={faHashtag} />
+              <div className="linklabel">Social Media</div>
+            </li>
+          </Link>
+          <Link to={"/3dModel"} style={{ textDecoration: "none" }}>
+            <li className="navLink">
+              <FontAwesomeIcon className="icon" icon={faVrCardboard} />
+              <div className="linklabel">3D Model</div>
             </li>
           </Link>
         </ul>

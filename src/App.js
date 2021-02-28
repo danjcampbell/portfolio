@@ -3,6 +3,7 @@ import "./App.css";
 import { Resume } from "./Resume.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { NavBar } from "./NavBar.js";
+import { ThreeDModel } from "./ThreeDModel";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           }}
         />
         <Route path="/resume" render={() => <Resume />} />
+        <Route path="/3dModel" render={() => <ThreeDModel />} />
       </Router>
     </div>
   );

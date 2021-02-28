@@ -79,3 +79,11 @@ h1 {
 .social {
   justify-content: center;
 }
+
+.icon {
+  float: "left";
+}
+
+.linklabel {
+  width: 75%;
+}
