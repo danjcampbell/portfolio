@@ -30,6 +30,7 @@ export const Resume = () => {
           Daniel Campbell
         </a>
       </div>
+    <input type="file">upload</input>
     </div>
   );
 };
