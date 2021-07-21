@@ -27,7 +27,7 @@ export const Resume = () => {
           class="LI-simple-link"
           href="https://www.linkedin.com/in/danieljcampbell1?trk=profile-badge"
         >
-          Daniel Campbell
+          Daniel Campbell Test
         </a>
       </div>
     <input type="file">upload</input>
