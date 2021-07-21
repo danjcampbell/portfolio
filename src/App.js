@@ -25,7 +25,6 @@ function App() {
         <Route path="/resume" render={() => <Resume />} />
         <Route path="/3dModel" render={() => <ThreeDModel />} />
       </Router>
-<input type="file" />
     </div>
   );
 }
